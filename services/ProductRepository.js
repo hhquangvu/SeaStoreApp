@@ -38,5 +38,16 @@ exports.getAll = function(callback) {
  * Get product from database
  */
 exports.fetchWithOption = function(option, callback) {
-
+	var products = new Products({
+		type : 1
+	});
+	
+	products.fetch({
+		success : function(results) {
+			callback(results.toJSON());
+		},
+		error : function(error) {
+			console.log(error);
+		}
+	});
 };
