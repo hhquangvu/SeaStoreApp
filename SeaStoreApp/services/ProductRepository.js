@@ -39,4 +39,15 @@ exports.getAll = function(callback) {
  */
 exports.fetchWithOption = function(option, callback) {
 
+	var query = new StackMob.Collection.Query();
+	query.equals('type', option).orderAsc('createddate');
+	var products = new Products();
+	products.query(query, {
+		success : function(results) {
+			callback(results.toJSON());
+		},
+		error : function(error) {
+			console.log(error);
+		}
+	});
 };

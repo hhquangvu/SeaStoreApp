@@ -51,79 +51,29 @@ body {
 
 		<div class="vh-menu-vertical">
 			<ul>
-				<li><a href="#">Tất cả</a></li>
-				<li><a href="#">Cá</a></li>
-				<li><a href="#">Tôm</a></li>
-				<li><a href="#">Mực</a></li>
-				<li><a href="#">Bạch tuột</a></li>
+				<li><a href="/item/">Tất cả</a></li>
+				<li><a href="/item/1">Mực</a></li>
+				<li><a href="/item/2">Bạch tuột</a></li>
+				<li><a href="/item/3">Khô</a></li>
+				<li><a href="/item/4">Cá</a></li>
 			</ul>
 		</div>
 
 		<div class="vh-image-item">
 			<ul>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
+				<% for(var i=0; i
+				<data.length; i++) {%>
+
+				<li><img alt="" src="<%- data[i].img%>"
+					class="vh-image-item-bg">
 					<div class="vh-image-item-info">
 						<div>
-							<a href="#">Tôm loại 1</a>
+							<a href="#"><%- data[i].name%></a> <span><%-
+								data[i].description%></span>
 						</div>
-						<span>120.000 đ</span>
+						<span><%- data[i].newprice%> đ</span>
 					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
+				<%}%> 
 			</ul>
 		</div>
 
