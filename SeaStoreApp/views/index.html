@@ -64,15 +64,14 @@ body {
 				<% for(var i=0; i
 				<data.length; i++) {%>
 
-				<li><img alt="" src="<%- data[i].img%>"
-					class="vh-image-item-bg">
-					<div class="vh-image-item-info">
+				<li class="vh-radius"><img alt="" src="<%- data[i].img%>"
+					class="vh-image-item-bg vh-radius">
+					<div class="vh-image-item-info vh-radius">
 						<div>
 							<a href="#"><%- data[i].name%></a> <span><%-
 								data[i].description%></span>
 						</div>
-						<span><%- data[i].newprice%> đ</span>
-					</div></li>
+					</div> <span class="vh-image-item-price"><%- data[i].newprice%> đ</span></li>
 				<%}%> 
 			</ul>
 		</div>

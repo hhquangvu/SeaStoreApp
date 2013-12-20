@@ -2,9 +2,13 @@
 	clear: both;
 }
 
+.vh-radius {
+	border-radius: 13px;
+}
+
 .vh-menu-vertical {
 	min-height: 50px;
-	background: url('../img/line_title.png') center bottom no-repeat;
+	background: url('../img/line_title.png') center bottom repeat-x;
 }
 
 .vh-menu-vertical ul {
@@ -25,15 +29,16 @@
 
 .vh-menu-vertical ul li a {
 	color: #4ea7c7;
-	padding: 10px 20px;
-	font-size: 110%;
+	padding: 5px 20px;
+	font-size: 1.1em;
+	border-radius: 13px;
 }
 
 .vh-menu-vertical ul li a:hover {
 	background: #116f8e;
 	color: #fff;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 .vh-image-item ul {
@@ -49,6 +54,7 @@
 	width: 200px;
 	height: 200px;
 	box-shadow: 0 3px 10px #333;
+	margin: 10px;
 }
 
 .vh-image-item ul li img {
@@ -72,18 +78,17 @@
 }
 
 .vh-image-item-info div	a {
-	color: #eee;
+	color: #fff;
 	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+	border-bottom: 1px solid #eee;
 }
 
 .vh-image-item-info span {
 	display: block;
-	text-align: right;
-	color: #ff0000;
+	color: #ccc;
 	padding: 10px;
-	background: #000;
-	color: #ff0000;
-	font-weight: bold;
 }
 
 .vh-index-menu ul {
@@ -112,4 +117,29 @@
 .vh-index-menu ul li img:hover {
 	border: 5px solid #e1cd90;
 	box-shadow: 0 0 20px #000;
+}
+
+.vh-image-item-price {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	float: left;
+	width: 200px;
+	height: 30px;
+	background: #fff;
+	display: block;
+	color: #bb1c0a;
+	text-align: right;
+	padding: 5px 10px;
+	text-align: right;
+	opacity: 0.8;
+	font-family: "Verdana";
+	border-radius: 0 0 13px 13px;
+}
+
+.vh-introduce {
+	background: #fff;
+	opacity: 0.8;
+	padding: 20px;
 }
