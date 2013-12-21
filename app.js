@@ -24,6 +24,7 @@ app.configure('development', function() {
 });
 
 app.get('/', routes.index);
+app.get('/item', routes.getAll);
 app.get('/item/:type', routes.getProductByType);
 
 http.createServer(app).listen(app.get('port'), function() {

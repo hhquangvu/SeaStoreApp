@@ -23,8 +23,10 @@ var Products = StackMob.Collection.extend({
  * Get All product from database
  */
 exports.getAll = function(callback) {
+	var query = new StackMob.Collection.Query();
+	query.orderAsc('createddate');
 	var products = new Products();
-	products.fetch({
+	products.query(query, {
 		success : function(results) {
 			callback(results.toJSON());
 		},
@@ -38,11 +40,11 @@ exports.getAll = function(callback) {
  * Get product from database
  */
 exports.fetchWithOption = function(option, callback) {
-	var products = new Products({
-		type : 1
-	});
-	
-	products.fetch({
+
+	var query = new StackMob.Collection.Query();
+	query.equals('type', option).orderAsc('createddate');
+	var products = new Products();
+	products.query(query, {
 		success : function(results) {
 			callback(results.toJSON());
 		},

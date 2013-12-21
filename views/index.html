@@ -10,7 +10,7 @@
 <!-- User Define-->
 <link href="../css/vuhong.css" rel="stylesheet">
 <script type="text/javascript" src="../js/index.js"></script>
-<title>Hải sản sạch</title>
+<title>Hải sản Cam Ranh</title>
 <style type="text/css">
 body {
 	background: url('../img/bg.jpg') center repeat fixed;
@@ -28,14 +28,12 @@ body {
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand"><img src="../img/logo.png"
+			<a href="/" class="navbar-brand"><img src="../img/logo.png"
 				alt="Hải sản sạch"></a>
 		</div>
 
 		<!-- Collapse -->
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Bài viết</a></li>
-			<li><a href="#">Liên hệ</a></li>
 		</ul>
 		</nav>
 		<!-- /Collapse -->
@@ -51,93 +49,43 @@ body {
 
 		<div class="vh-menu-vertical">
 			<ul>
-				<li><a href="#">Tất cả</a></li>
-				<li><a href="#">Cá</a></li>
-				<li><a href="#">Tôm</a></li>
-				<li><a href="#">Mực</a></li>
-				<li><a href="#">Bạch tuột</a></li>
+				<li><a href="/item/">Tất cả</a></li>
+				<li><a href="/item/1">Mực</a></li>
+				<li><a href="/item/2">Bạch tuột</a></li>
+				<li><a href="/item/3">Khô</a></li>
+				<li><a href="/item/4">Cá</a></li>
 			</ul>
 		</div>
 
 		<div class="vh-image-item">
 			<ul>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
+				<% for(var i=0; i
+				<data.length; i++) {%>
+
+				<li class="vh-radius"><img alt="" src="<%- data[i].img%>"
+					class="vh-image-item-bg vh-radius">
+					<div class="vh-image-item-info vh-radius">
 						<div>
-							<a href="#">Tôm loại 1</a>
+							<a href="#"><%- data[i].name%></a> <span><%-
+								data[i].description%></span>
 						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
-				<li><img alt="" src="../img/tom.jpg" class="vh-image-item-bg">
-					<div class="vh-image-item-info">
-						<div>
-							<a href="#">Tôm loại 1</a>
-						</div>
-						<span>120.000 đ</span>
-					</div></li>
+					</div> <span class="vh-image-item-price"><%- data[i].newprice%> đ</span></li>
+				<%}%> 
 			</ul>
 		</div>
 
 		<div class="vh-menu-vertical vh-clear"></div>
 
 		<address>
-			<strong>Hải sản sạch</strong><br>123 Nguyễn Biểu, Phường 9, Quận
-			5, TP. Hồ Chí Minh<br> <abbr title="Phone">P:</abbr> (123)
-			456-7890
+			<strong>Hải sản sạch</strong><br>Đường Võ Văn Ngân, Thủ Đức, TP.
+			Hồ Chí Minh<br> <abbr title="Phone">P:</abbr> 098 396 29 15
+			(Quỳnh)
 		</address>
 
 		<address>
-			<strong>Facebook</strong><br> <a href="www.facebook.com">Hải
-				sản sạch Facebook</a>
+			<strong>Facebook</strong><br> <a
+				href="https://www.facebook.com/pages/H%E1%BA%A3i-S%E1%BA%A3n-T%C6%B0%C6%A1i-S%E1%BA%A1ch/179631565574277"
+				target="_blank">Hải sản sạch Facebook</a>
 		</address>
 
 	</div>
