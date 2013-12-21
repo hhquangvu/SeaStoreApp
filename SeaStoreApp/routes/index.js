@@ -5,8 +5,10 @@
 var ProductRepository = require('../services/ProductRepository.js');
 
 exports.index = function(req, res) {
-	console.log('### index');
+	res.render('banner.html', {});
+};
 
+exports.getAll = function(req, res) {
 	ProductRepository.getAll(function(results) {
 		res.render('index.html', {
 			data : results
@@ -16,10 +18,7 @@ exports.index = function(req, res) {
 };
 
 exports.getProductByType = function(req, res) {
-	console.log('### getProductByType');
-
 	ProductRepository.fetchWithOption(req.params.type, function(results) {
-		console.log(results);
 		res.render('index.html', {
 			data : results
 		});
