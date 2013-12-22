@@ -16,8 +16,14 @@ $(document).ready(
 				$('.vh-image-item-info').fadeOut();
 			});
 
+			/**
+			 * Format price
+			 * 
+			 * @param input
+			 * @returns output
+			 */
 			function formatPrice(input) {
-				var output = input.substr(0, input.length - 3) + ","
+				var output = input.substr(0, input.length - 3) + "."
 						+ input.substr(input.length - 3);
 				return output;
 			}
