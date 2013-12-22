@@ -22,12 +22,6 @@ body {
 		role="banner">
 	<div class="container">
 		<div class="navbar-header">
-			<button class="navbar-toggle" type="button" data-toggle="collapse"
-				data-target=".bs-navbar-collapse">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
 			<a href="/" class="navbar-brand"><img src="../img/logo.png"
 				alt="Hải sản sạch"></a>
 		</div>
@@ -60,8 +54,8 @@ body {
 		<div class="vh-image-item">
 			<ul>
 				<% for(var i=0; i
-				<data.length; i++) {%>
-
+				<data.length; i++) {
+				%>
 				<li class="vh-radius"><img alt="" src="<%- data[i].img%>"
 					class="vh-image-item-bg vh-radius">
 					<div class="vh-image-item-info vh-radius">
@@ -69,7 +63,7 @@ body {
 							<a href="#"><%- data[i].name%></a> <span><%-
 								data[i].description%></span>
 						</div>
-					</div> <span class="vh-image-item-price"><%- data[i].newprice%> đ</span></li>
+					</div> <span class="vh-image-item-price"><%- data[i].newprice%></span></li>
 				<%}%> 
 			</ul>
 		</div>
